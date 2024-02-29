@@ -1,5 +1,3 @@
-import Political from "./scenes/Political";
-
 const gameDimensions = {
     width: 1280,
     height: 740,
@@ -19,14 +17,14 @@ const gameDimensions = {
             default: 'arcade',
             arcade: {
                 gravity: { y: 300 },
-                debug: true
+                debug: false
             }
         },
     
     scene: [
-        privacy, political, brand, netzero
+        Privacy, Political, Brand, Netzero
     ]
 };
 
 // Cria o jogo passando a variável config como atributos
-const game = new Phaser.Game(config);
+var game = new Phaser.Game(config);
